@@ -1,28 +1,39 @@
+<!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Read Me Homework</title>
+        </head>
+        <body>
 
-        Project Title:
-        sdfghj
 
-        Description:
-        dfghjk
+        <h1>Read Me Homework</h1>
 
-        Table of Contents:
-        fghjk
+        <h3>Description:</h3>
+        <p>Create a readme.md </p>
 
-        Installation:
-        dfghj
+        <h3>Table of Contents:</h3>
+        <p>only 1 page </p>
 
-        Usage:
-        dfghjk
+        <h3>Installation:</h3>
+        <p> </p>
 
-        License:
-        dfgh
+        <h3>Usage:</h3>
+        <p> </p>
 
-        Contributing:
-        dfghj
+        <h3>License:</h3>
+        <p> </p>
 
-        Tests:
-        dfghjk
+        <h3>Contributing:</h3>
+        <p> </p>
 
-        GitHub info:
-        ![User Profile Picture](https://avatars1.githubusercontent.com/u/57328587?s=460&u=69967ebce07862b991fed723418ff6045bfa36ad&v=4)
-        Email: gdhyujd
+        <h3>Tests:</h3>
+        <p> </p>
+
+        <h3>GitHub info:</h3>
+        <img src = "https://avatars1.githubusercontent.com/u/57328587?s=400&u=69967ebce07862b991fed723418ff6045bfa36ad&v=4">
+        <p><strong>Email:</strong></p>
+
+        </body>
+        </html>

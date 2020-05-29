@@ -63,34 +63,45 @@ inquirer
 
     ]).then(function(data) {
 
-        var HTML=`
-        Project Title:
-        ${data.title}
+        var HTML=`<!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>${data.title}</title>
+        </head>
+        <body>
 
-        Description:
-        ${data.description}
 
-        Table of Contents:
-        ${data.contents}
+        <h1>${data.title}</h1>
 
-        Installation:
-        ${data.installation}
+        <h3>Description:</h3>
+        <p>${data.description} </p>
 
-        Usage:
-        ${data.usage}
+        <h3>Table of Contents:</h3>
+        <p>${data.contents} </p>
 
-        License:
-        ${data.license}
+        <h3>Installation:</h3>
+        <p>${data.installation} </p>
 
-        Contributing:
-        ${data.contributing}
+        <h3>Usage:</h3>
+        <p>${data.usage} </p>
 
-        Tests:
-        ${data.test}
+        <h3>License:</h3>
+        <p>${data.license} </p>
 
-        GitHub info:
-        ![User Profile Picture](${data.image})
-        Email: ${data.email}`;
+        <h3>Contributing:</h3>
+        <p>${data.contributing} </p>
+
+        <h3>Tests:</h3>
+        <p>${data.test} </p>
+
+        <h3>GitHub info:</h3>
+        <img src = "${data.image}">
+        <p><strong>Email:</strong>${data.email}</p>
+
+        </body>
+        </html>`;
 
         fs.writeFile("README.md", HTML, function(err){
 
