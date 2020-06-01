@@ -62,7 +62,7 @@ inquirer
 
 
     ]).then(function(data) {
-        
+
         fs.writeFile("README.md", generateMD({...data}), function(err){
 
             if (err){
@@ -74,26 +74,44 @@ inquirer
 
         function generateMD(data){
 
-            return `#Project Title:
+            return `# Project Title:
+
             ${data.title}
-            ##Description:
+
+            ## Description:
+
             ${data.description}
-            ##Table of Contents:
+
+            ## Table of Contents:
+
             ${data.contents}
-            ##Installation:
+
+            ## Installation:
+
             ${data.installation}
-            ##Usage:
+
+            ## Usage:
+
             ${data.usage}
-            ##License:
+
+            ## License:
+
             ${data.license}
-            ![GitHub license](https://img.shields.io/badge/license-${data.license}-blue.svg)
-            ##Contributing:
+![GitHub license](https://img.shields.io/badge/license-${data.license}-blue.svg)
+
+            ## Contributing:
+
             ${data.contributing}
-            ##Tests:
+
+            ## Tests:
+
             ${data.test}
-            ##GitHub info:
+
+            ## GitHub info:
+
             ![User Profile Picture](${data.image})
-            ##Email: ${data.email}`
+            
+            ## Email: ${data.email}`
         };
 
     })
