@@ -63,7 +63,7 @@ inquirer
 
     ]).then(function(data) {
 
-        fs.writeFile("README.md", generateMD({...data}), function(err){
+        fs.writeFile("README.md", generateMD(data), function(err){
 
             if (err){
                 return console.log(err);
@@ -75,6 +75,8 @@ inquirer
         function generateMD(data){
 
             return `# Project Title: ${data.title}
+
+            ![GitHub license](https://img.shields.io/badge/license-${data.license}-blue.svg)
 
             ## Description:
 
@@ -95,7 +97,6 @@ inquirer
             ## License:
 
             ${data.license}
-![GitHub license](https://img.shields.io/badge/license-${data.license}-blue.svg)
 
             ## Contributing:
 
@@ -109,7 +110,9 @@ inquirer
 
             ![User Profile Picture](${data.image})
 
-            ## Email: ${data.email}`
+            ## Email: ${data.email}
+            
+            `
         };
 
     })
