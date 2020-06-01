@@ -7,13 +7,13 @@ inquirer
             type: "input",
             name: "username",
             message: "What is your GitHub username?"
-        }, 
+        },
 
         {
             type: "input",
             name: "title",
             message: "What is the Project title?"
-        }, 
+        },
         {
             type: "input",
             name: "description",
@@ -61,58 +61,55 @@ inquirer
         }
 
 
-    ]).then(function(data) {
+    ]).then(function (data) {
 
-        fs.writeFile("README.md", generateMD(data), function(err){
+        fs.writeFile("README.md", generateMD(data), function (err) {
 
-            if (err){
+            if (err) {
                 return console.log(err);
             }
 
             console.log("YAYYYA!");
         })
 
-        function generateMD(data){
+        function generateMD(data) {
 
             return `# Project Title: ${data.title}
 
-            ![GitHub license](https://img.shields.io/badge/license-${data.license}-blue.svg)
-
-            ## Description:
+ ## Description:
 
             ${data.description}
 
-            ## Table of Contents:
+ ## Table of Contents:
 
             ${data.contents}
 
-            ## Installation:
+ ## Installation:
 
             ${data.installation}
 
-            ## Usage:
+## Usage:
 
             ${data.usage}
 
-            ## License:
+  ## License:
 
             ${data.license}
+![GitHub license](https://img.shields.io/badge/license-${data.license}-blue.svg)
 
-            ## Contributing:
+## Contributing:
 
             ${data.contributing}
 
-            ## Tests:
+## Tests:
 
             ${data.test}
 
-            ## GitHub info:
+ ## GitHub info:
 
             ![User Profile Picture](${data.image})
 
-            ## Email: ${data.email}
-            
-            `
+## Email: ${data.email}`
         };
 
     })
