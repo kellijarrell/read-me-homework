@@ -80,37 +80,37 @@ inquirer
 
  ## Description:
 
-            ${data.description}
+${data.description}
 
  ## Table of Contents:
 
-            ${data.contents}
+${data.contents}
 
  ## Installation:
 
-            ${data.installation}
+${data.installation}
 
 ## Usage:
 
-            ${data.usage}
+${data.usage}
 
 ## License:
 
-            ${data.license}
+${data.license}
 
 ## Contributing:
 
-            ${data.contributing}
+${data.contributing}
 
 ## Tests:
 
-            ${data.test}
+${data.test}
 
 ![User Profile Picture](${data.image})
 
 ## GitHub Email: 
 
-            ${data.email}`
+${data.email}`
         };
 
     })

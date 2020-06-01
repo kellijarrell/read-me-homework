@@ -4,34 +4,34 @@
 
  ## Description:
 
-            A read me file creater that grabs data supplied by the user.
+A read me file creater that grabs data supplied by the user.
 
  ## Table of Contents:
 
-            NA
+N/A
 
  ## Installation:
 
-            NA
+N/A
 
 ## Usage:
 
-            NA
+N/A
 
 ## License:
 
-            MIT
+MIT
 
 ## Contributing:
 
-            kellijarrell
+kellijarrell
 
 ## Tests:
 
-            NA
+N/A
 
 ![User Profile Picture](https://avatars1.githubusercontent.com/u/57328587?s=460&u=69967ebce07862b991fed723418ff6045bfa36ad&v=4)
 
 ## GitHub Email: 
 
-            kelliajarrell@gmail.com
+kelliajarrell@gmail.com
