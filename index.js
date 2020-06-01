@@ -63,47 +63,29 @@ inquirer
 
     ]).then(function(data) {
 
-        var HTML=`<!DOCTYPE html>
-        <html lang="en">
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>${data.title}</title>
-        </head>
-        <body>
+        var readMe=`
+        Project Title:
+        ${data.title}
+        Description:
+        ${data.description}
+        Table of Contents:
+        ${data.contents}
+        Installation:
+        ${data.installation}
+        Usage:
+        ${data.usage}
+        License:
+        ${data.license}
+        ![GitHub license](https://img.shields.io/badge/license-${data.license}-blue.svg)
+        Contributing:
+        ${data.contributing}
+        Tests:
+        ${data.test}
+        GitHub info:
+        ![User Profile Picture](${data.image})
+        Email: ${data.email}`;
 
-
-        <h1>${data.title}</h1>
-
-        <h3>Description:</h3>
-        <p>${data.description} </p>
-
-        <h3>Table of Contents:</h3>
-        <p>${data.contents} </p>
-
-        <h3>Installation:</h3>
-        <p>${data.installation} </p>
-
-        <h3>Usage:</h3>
-        <p>${data.usage} </p>
-
-        <h3>License:</h3>
-        <p>${data.license} </p>
-
-        <h3>Contributing:</h3>
-        <p>${data.contributing} </p>
-
-        <h3>Tests:</h3>
-        <p>${data.test} </p>
-
-        <h3>GitHub info:</h3>
-        <img src = "${data.image}">
-        <p><strong>Email:</strong>${data.email}</p>
-
-        </body>
-        </html>`;
-
-        fs.writeFile("README.md", HTML, function(err){
+        fs.writeFile("README.md", readMe, function(err){
 
             if (err){
                 return console.log(err);
