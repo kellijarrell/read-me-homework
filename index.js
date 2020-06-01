@@ -62,30 +62,8 @@ inquirer
 
 
     ]).then(function(data) {
-
-        var readMe=`
-        #Project Title:
-        ${data.title}
-        ##Description:
-        ${data.description}
-        ##Table of Contents:
-        ${data.contents}
-        ##Installation:
-        ${data.installation}
-        ##Usage:
-        ${data.usage}
-        ##License:
-        ${data.license}
-        ![GitHub license](https://img.shields.io/badge/license-${data.license}-blue.svg)
-        ##Contributing:
-        ${data.contributing}
-        ##Tests:
-        ${data.test}
-        ##GitHub info:
-        ![User Profile Picture](${data.image})
-        ##Email: ${data.email}`;
-
-        fs.writeFile("README.md", readMe, function(err){
+        
+        fs.writeFile("README.md", generateMD({...data}), function(err){
 
             if (err){
                 return console.log(err);
@@ -93,4 +71,30 @@ inquirer
 
             console.log("YAYYYA!");
         })
+
+        function generateMD(data){
+
+            return `#Project Title:
+            ${data.title}
+            ##Description:
+            ${data.description}
+            ##Table of Contents:
+            ${data.contents}
+            ##Installation:
+            ${data.installation}
+            ##Usage:
+            ${data.usage}
+            ##License:
+            ${data.license}
+            ![GitHub license](https://img.shields.io/badge/license-${data.license}-blue.svg)
+            ##Contributing:
+            ${data.contributing}
+            ##Tests:
+            ${data.test}
+            ##GitHub info:
+            ![User Profile Picture](${data.image})
+            ##Email: ${data.email}`
+        };
+
     })
+
