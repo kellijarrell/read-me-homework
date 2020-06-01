@@ -76,6 +76,8 @@ inquirer
 
             return `# Project Title: ${data.title}
 
+![GitHub license](https://img.shields.io/badge/license-${data.license}-blue.svg)
+
  ## Description:
 
             ${data.description}
@@ -92,10 +94,9 @@ inquirer
 
             ${data.usage}
 
-  ## License:
+## License:
 
             ${data.license}
-![GitHub license](https://img.shields.io/badge/license-${data.license}-blue.svg)
 
 ## Contributing:
 
@@ -107,9 +108,11 @@ inquirer
 
  ## GitHub info:
 
-            ![User Profile Picture](${data.image})
+![User Profile Picture](${data.image})
 
-## Email: ${data.email}`
+## Email: 
+
+            ${data.email}`
         };
 
     })

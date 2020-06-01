@@ -1,36 +1,39 @@
 # Project Title: title
 
+![GitHub license](https://img.shields.io/badge/license-d-blue.svg)
+
  ## Description:
 
-            s
+            d
 
  ## Table of Contents:
 
-            s
+            d
 
  ## Installation:
 
-            s
+            d
 
 ## Usage:
 
-            s
+            d
 
-  ## License:
+## License:
 
-            s
-![GitHub license](https://img.shields.io/badge/license-s-blue.svg)
+            d
 
 ## Contributing:
 
-            s
+            d
 
 ## Tests:
 
-            s
+            d
 
  ## GitHub info:
 
-            ![User Profile Picture](d)
+![User Profile Picture](https://avatars1.githubusercontent.com/u/57328587?s=460&u=69967ebce07862b991fed723418ff6045bfa36ad&v=4)
 
-## Email: d
+## Email: 
+
+            a
