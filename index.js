@@ -106,11 +106,9 @@ inquirer
 
             ${data.test}
 
- ## GitHub info:
-
 ![User Profile Picture](${data.image})
 
-## Email: 
+## GitHub Email: 
 
             ${data.email}`
         };
