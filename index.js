@@ -64,26 +64,26 @@ inquirer
     ]).then(function(data) {
 
         var readMe=`
-        Project Title:
+        #Project Title:
         ${data.title}
-        Description:
+        ##Description:
         ${data.description}
-        Table of Contents:
+        ##Table of Contents:
         ${data.contents}
-        Installation:
+        ##Installation:
         ${data.installation}
-        Usage:
+        ##Usage:
         ${data.usage}
-        License:
+        ##License:
         ${data.license}
         ![GitHub license](https://img.shields.io/badge/license-${data.license}-blue.svg)
-        Contributing:
+        ##Contributing:
         ${data.contributing}
-        Tests:
+        ##Tests:
         ${data.test}
-        GitHub info:
+        ##GitHub info:
         ![User Profile Picture](${data.image})
-        Email: ${data.email}`;
+        ##Email: ${data.email}`;
 
         fs.writeFile("README.md", readMe, function(err){
 
