@@ -74,9 +74,7 @@ inquirer
 
         function generateMD(data){
 
-            return `# Project Title:
-
-            ${data.title}
+            return `# Project Title: ${data.title}
 
             ## Description:
 
@@ -110,7 +108,7 @@ inquirer
             ## GitHub info:
 
             ![User Profile Picture](${data.image})
-            
+
             ## Email: ${data.email}`
         };
 
